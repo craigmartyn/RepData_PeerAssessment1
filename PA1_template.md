@@ -94,7 +94,7 @@ ggplot(stepsbyday, aes(x=steps, na.rm=TRUE))+geom_histogram()
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![](Rep_Data_Peer_Assessment_1_files/figure-html/unnamed-chunk-3-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -124,7 +124,7 @@ median(stepsbyday$steps, na.rm=TRUE)
 ggplot(stepsbyint, aes(x=interval, y=steps))+geom_line()
 ```
 
-![](Rep_Data_Peer_Assessment_1_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -201,7 +201,7 @@ ggplot(modstepsbyday, aes(x=steps))+geom_histogram()
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![](Rep_Data_Peer_Assessment_1_files/figure-html/unnamed-chunk-9-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
 
 ```r
 mean(modstepsbyday$steps)
@@ -258,4 +258,4 @@ p<-ggplot(stepsbyintwday, aes(x=interval, y=steps)) + geom_line()
 p+facet_grid(wday ~ .)
 ```
 
-![](Rep_Data_Peer_Assessment_1_files/figure-html/unnamed-chunk-11-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png) 
